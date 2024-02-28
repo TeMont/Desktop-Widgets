@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    padding-left: 10px;
+}
+
+svg {
+    width: 35px;
+    height: 35px;
+    transition: .3s;
+    color: black;
+}
+
+#wrapper {
+    display: grid;
+    align-items: center;
+    width: 60px;
+    height: 360px;
+    padding: 5px;
+    padding-bottom: 0;
+    border: 3px solid black;
+    border-radius: 16px;
+    transition: .3s;
+}
+
+#wrapper:hover {
+    width: 75px;
+    height: 385px;
+}
+
+.shortcut {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.shortcut:hover {
+    width: 75px;
+    height: 75px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+.shortcut:hover .shortcut-button{
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid black;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -7.5px;
+    margin: 5px 0 10px 0;
+}
+
+.shortcut:hover svg {
+    color: black;
+    width: 50px;
+    height: 50px;
+}
+
+.shortcut:active {
+    width: 60px;
+    height: 60px;
+}
+
+.shortcut:active svg {
+    width: 45px;
+    height: 45px;
+}
+
+.shortcut:active .shortcut-button {
+    width: 65px;
+    height: 65px;
+    border: 2px solid rgba(235, 65, 94, 0.3);
+}
+
+.shortcut-button {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.25);
+    -webkit-transition: .3s;
+    transition: .3s;
+    background: white;
+}
+
+.shortcut-button:active {
+    background: rgba(54, 54, 54, 0.6);
+}
+
+.shortcut-button:active svg{
+    color: rgb(130, 215, 243);
+    -webkit-transition: .0s;
+    transition: .0s;
+}
+
